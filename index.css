@@ -1,0 +1,19 @@
+html {
+	height: 100%;
+	background: linear-gradient(-45deg, #534bae, cyan, #9c4dcc);
+	background-size: 150%, 150%;
+	animation-name: backgroundAnim;
+	animation-iteration-count: infinite;
+	animation-duration: 120s;
+	animation-timing-function: ease-in-out;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/88/Audi_R18_e-tron_quattro_no1_2012_WEC_Fuji.jpg);
+}
+@keyframes backgroundAnim {
+	0%,
+	100% {
+		background-position: 0% 70%;
+	}
+	50% {
+		background-position: 100% 80%;
+	}
+}
