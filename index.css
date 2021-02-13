@@ -1,5 +1,6 @@
 body {
-	/* Fondo de la página */
+	/* background */
+	font-family: "IBM Plex Sans", sans-serif;
 	width: 100%;
 	height: 100%;
 	animation-name: backgroundAnim;
@@ -9,7 +10,7 @@ body {
 	background-repeat: no-repeat;
 	background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/88/Audi_R18_e-tron_quattro_no1_2012_WEC_Fuji.jpg);
 }
-/* animación del fondo, más notorio en pantallas pequeñas */
+/* background image animation, more notorious on smaller screens*/
 @keyframes backgroundAnim {
 	0%,
 	100% {
@@ -19,3 +20,50 @@ body {
 		background-position: 100% 40%;
 	}
 }
+
+/*navbar*/
+#full-navbar {
+	background-color: #0e2f2f;
+}
+/*end-navbar*/
+
+/*links*/
+a {
+	color: #00b7c3;
+	font-weight: bold;
+}
+
+a:hover {
+	transition: 300ms;
+	color: #026f77;
+}
+
+#navbar-menu {
+	margin: auto;
+}
+
+#navbar-menu > .col-md {
+	color: #0e2f2f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	margin: 7px;
+	border-radius: 2px;
+	background-color: #00b7c3;
+}
+/*end-links*/
+
+/*collapsed navbar button*/
+.navbar-toggler {
+	background-color: #00b7c3;
+}
+
+.navbar-toggler:hover {
+	transition: 300ms;
+	background-color: #026f77;
+}
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/*end-collapsed navbar button*/
