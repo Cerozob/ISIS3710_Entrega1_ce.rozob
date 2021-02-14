@@ -4,4 +4,4 @@ Esta es una página que contiene una descripción mía, hobbies, intereses y hab
 
 ## Enlace a la página
 
-[Personal Website - ce.rozob](https://cerozob.github.io/cerozobISIS3710personalwebsite/index.html)
+[Personal Website - ce.rozob](https://cerozob.github.io/cerozobISIS3710personalwebsite/)
