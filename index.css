@@ -1,69 +1,130 @@
 body {
 	/* background */
-	font-family: "IBM Plex Sans", sans-serif;
-	width: 100%;
-	height: 100%;
+	font-family: "Lato", sans-serif;
 	animation-name: backgroundAnim;
 	animation-iteration-count: infinite;
-	animation-duration: 120s;
+	animation-duration: 80s;
 	animation-timing-function: ease-in-out;
 	background-repeat: no-repeat;
-	background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/88/Audi_R18_e-tron_quattro_no1_2012_WEC_Fuji.jpg);
+	background: linear-gradient(-45deg, #0e2f2f, #006969);
+	background-size: 500%;
 }
 /* background image animation, more notorious on smaller screens*/
 @keyframes backgroundAnim {
 	0%,
 	100% {
-		background-position: 10% 30%;
+		background-position: 0% 0%;
+	}
+	25% {
+		background-position: 0% 100%;
 	}
 	50% {
-		background-position: 100% 40%;
+		background-position: 100% 100%;
 	}
+	75% {
+		background-position: 100% 0%;
+	}
+}
+
+/*cards*/
+.card {
+	border: 0;
+	border-radius: 0;
+}
+
+/*titles*/
+h1 {
+	text-align: center;
+	font-weight: bold;
+	color: aqua;
 }
 
 /*navbar*/
-#full-navbar {
+#full-navbar,
+footer {
 	background-color: #0e2f2f;
 }
-/*end-navbar*/
 
 /*links*/
 a {
-	color: #00b7c3;
+	color: aqua;
 	font-weight: bold;
 }
 
 a:hover {
 	transition: 300ms;
-	color: #026f77;
+	color: teal;
 }
 
 #navbar-menu {
 	margin: auto;
 }
 
+/*navbar buttons*/
 #navbar-menu > .col-md {
 	color: #0e2f2f;
 	display: flex;
+	text-decoration: none;
 	justify-content: center;
+	text-align: center;
 	align-items: center;
 	height: 50px;
 	margin: 7px;
-	border-radius: 2px;
-	background-color: #00b7c3;
+	border-radius: 4px;
+	background-color: aqua;
+}
+
+/*specific navbar button behaviour*/
+#navbar-menu > .col-md:hover {
+	transition: 300ms;
+	background-color: teal;
 }
 /*end-links*/
 
 /*collapsed navbar button*/
 .navbar-toggler {
-	background-color: #00b7c3;
+	background-color: aqua;
 }
 
 .navbar-toggler:hover {
 	transition: 300ms;
-	background-color: #026f77;
+	background-color: teal;
 }
 .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 /*end-collapsed navbar button*/
+
+/*Banner*/
+
+#banner {
+	overflow: hidden;
+	height: 100vh;
+}
+#banner-background {
+	right: 0%;
+	bottom: 0%;
+	object-fit: cover;
+	min-height: 120vh;
+	animation-duration: 2s;
+	opacity: 1;
+}
+
+.banner-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 255, 255, 50%);
+	margin: 0;
+	padding: 0;
+}
+
+#banner-subtitle {
+	display: inline;
+	font-weight: bold;
+}
+/*end-banner*/
