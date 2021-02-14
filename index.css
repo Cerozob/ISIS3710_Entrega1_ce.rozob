@@ -6,7 +6,7 @@ body {
 	animation-duration: 80s;
 	animation-timing-function: ease-in-out;
 	background-repeat: no-repeat;
-	background: linear-gradient(-45deg, #0e2f2f, #006969);
+	background: linear-gradient(-45deg, #002f2f, #006969);
 	background-size: 500%;
 }
 /* background image animation, more notorious on smaller screens*/
@@ -30,19 +30,15 @@ body {
 .card {
 	border: 0;
 	border-radius: 0;
+	background-color: rgba(0, 0, 0, 0%);
 }
 
 /*titles*/
-h1 {
+h1,
+h3 {
 	text-align: center;
 	font-weight: bold;
 	color: aqua;
-}
-
-/*navbar*/
-#full-navbar,
-footer {
-	background-color: #0e2f2f;
 }
 
 /*links*/
@@ -55,6 +51,14 @@ a {
 a:hover {
 	transition: 300ms;
 	color: teal;
+}
+
+/*navbar*/
+
+/*navbar and footer color*/
+#full-navbar,
+footer {
+	background-color: #002f2f;
 }
 
 #navbar-menu {
@@ -110,6 +114,7 @@ a:hover {
 	opacity: 1;
 }
 
+/*Banner texts slightly different because of the background image*/
 .banner-text {
 	display: flex;
 	flex-direction: column;
@@ -118,13 +123,61 @@ a:hover {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 255, 255, 50%);
+	background-color: rgba(0, 255, 255, 60%);
 	margin: 0;
 	padding: 0;
 }
 
-#banner-subtitle {
+#banner-subtitle,
+#banner-title {
 	display: inline;
-	font-weight: bold;
+	color: #0e2f2f;
 }
 /*end-banner*/
+
+/*footer*/
+#footer-title,
+#contact-info {
+	font-weight: bold;
+}
+#external-contact-links {
+	background-color: #002f2f;
+	flex-basis: 100%;
+	margin-bottom: 10%;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+/*icons*/
+.icon {
+	max-height: 30px;
+	margin: 5%;
+	filter: invert(100%);
+}
+
+.copyrighted-icons {
+	font-size: small;
+	display: block;
+	color: aqua;
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+}
+
+.copyrighted-icons > a {
+	color: aqua;
+}
+
+/*actual text*/
+.card-text {
+	background-color: aqua;
+	border-radius: 4px;
+}
+
+p {
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+	color: #002f2f;
+}
