@@ -1,3 +1,4 @@
+<!--El código es muy legible y está bien indentado, la página se ve muy bien.-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,12 +27,13 @@
                 aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!--La navegación simpre abre una pestaña nueva, no es necesario poner siempre target="_blank"-->
             <div class="collapse navbar-collapse row container" id="navbar-menu">
-                <a target="_blank" class="col-md" href="#Bio">Who am I</a>
-                <a target="_blank" class="col-md" href="#Projects">Projects</a>
-                <a target="_blank" class="col-md" href="#Interests">Hobbies/Interests & Skills</a>
-                <a target="_blank" class="col-md" href="#Academic">Academic & work background</a>
-                <a target="_blank" class="col-md" href="#contact-info">Contact Info</a>
+                <a class="col-md" href="#Bio">Who am I</a>
+                <a class="col-md" href="#Projects">Projects</a>
+                <a class="col-md" href="#Interests">Hobbies/Interests & Skills</a>
+                <a class="col-md" href="#Academic">Academic & work background</a>
+                <a class="col-md" href="#contact-info">Contact Info</a>
             </div>
         </div>
     </nav>
@@ -49,8 +51,9 @@
     </header>
 
     <!-- content -->
+    <!--Los artículos no tienen headers (h2-h6), h1 solo se debería usar una vez por página.-->
     <section class="container-fluid" id="Bio">
-        <h1>Who am I?</h1>
+        <h2>Who am I?</h1>
         <article class="card-text">
             <p>Hello, I'm a 6th semester student of computer engineering at Los Andes University. This page will show
                 some of my personal projects, hobbies, interests, skills, academical and workplace information and some
@@ -59,17 +62,19 @@
         </article>
     </section>
     <section class="container-fluid" id="Projects">
-        <h1>Projects</h1>
+        <!--No hay proyectos desplegados.-->
+        <h2>Projects</h1>
     </section>
     <section class="container-fluid" id="Interests">
-        <h1>Hobbies, Interests and skills</h1>
+        <h2>Hobbies, Interests and skills</h1>
         <article class="card-text">
             <p>Some of my hobbies are playing videogames, cycling, making plans with friends such as watching series or
                 movies and playing with my Dog</p>
         </article>
     </section>
     <section class="container-fluid" id="Academic">
-        <h1>Academic & workplace background</h1>
+        <!--No hay información académica desplegada.-->
+        <h2>Academic & workplace background</h1>
     </section>
 
     <footer id="#contact-info" class="card text-center bottom">
